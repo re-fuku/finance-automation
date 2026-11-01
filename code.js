@@ -6,7 +6,7 @@ function getGmails() {
     const targetSubject = PropertiesService
         .getScriptProperties()
         .getProperty("TARGET_SUBJECT")
-    const threads = GmailApp.search(`in:inbox subject:${targetSubject}`, 0, 1)
+    const threads = GmailApp.search(`in:inbox subject:${targetSubject}`)
     const sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("実績管理")
 
     for (const thread of threads) {

@@ -19,35 +19,7 @@
 - 1時間おきにGmailからクレジットカードの利用履歴を取得し、未追加のものをスプレッドシートへ追加する
 
 ## 5. 構成図
-
-```mermaid
-
-flowchart LR
-    subgraph Google Workspace
-        Gmail["Gmail<br/>カード利用履歴メール"]
-        Sheet["Google スプレッドシート<br/>実績管理"]
-        Mail["メール通知"]
-    end
-
-    subgraph GAS["Google Apps Script"]
-        TriggerFetch["時間主導型トリガー<br/>1時間おき"]
-        GetGmails["getGmails()<br/>本文を解析・行を追加"]
-        TriggerCheck["時間主導型トリガー<br/>毎日 20〜21時"]
-        CheckItems["searchUncategorizedItems()<br/>未分類を件数確認"]
-        Props["スクリプトプロパティ<br/>TARGET_SUBJECT<br/>FINANCE_URL"]
-    end
-
-    TriggerFetch --> GetGmails
-    Gmail -->|件名で検索・本文取得| GetGmails
-    GetGmails -->|利用先・日付・金額を追加<br/>処理後スレッドをアーカイブ| Sheet
-    Props -.->|TARGET_SUBJECT| GetGmails
-
-    TriggerCheck --> CheckItems
-    Sheet -->|E列の未分類を確認| CheckItems
-    Props -.->|FINANCE_URL| CheckItems
-    CheckItems -->|未分類が1件以上| Mail
-    Mail -->|件数と家計簿URLを送信| User["利用者"]
-```
+![構成図](images/flow.svg)
 
 ## . 学習内容
 - GASからGmailのスレッドを取得方法

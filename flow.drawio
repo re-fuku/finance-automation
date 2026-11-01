@@ -1,0 +1,48 @@
+<mxfile host="65bd71144e">
+    <diagram id="Vwh8EgdA4hEoavHqrA6K" name="ページ-1">
+        <mxGraphModel dx="1524" dy="595" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="zp_uxWkIxoyt38t0GTnI-6" parent="1" style="fillColor=none;strokeColor=#147EBA;verticalAlign=top;fontStyle=0;fontColor=#147EBA;whiteSpace=wrap;html=1;align=left;dashed=1;strokeWidth=2;" value="GoogleWorkspace" vertex="1">
+                    <mxGeometry height="320" width="400" x="-240" y="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="zp_uxWkIxoyt38t0GTnI-9" edge="1" parent="1" source="RI3q3OSulq-S7jP_f_yf-27" style="edgeStyle=none;html=1;" target="zp_uxWkIxoyt38t0GTnI-3" value="参照・編集">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="zp_uxWkIxoyt38t0GTnI-10" edge="1" parent="1" source="RI3q3OSulq-S7jP_f_yf-27" style="edgeStyle=none;html=1;" target="zp_uxWkIxoyt38t0GTnI-1" value="参照">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="RI3q3OSulq-S7jP_f_yf-27" parent="1" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#232F3D;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.user;labelPerimeter=1;" value="ユーザ" vertex="1">
+                    <mxGeometry height="78" width="78" x="-400" y="241" as="geometry"/>
+                </mxCell>
+                <mxCell id="zp_uxWkIxoyt38t0GTnI-1" parent="1" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.webicons.gmail;gradientColor=#DFDEDE;labelPerimeter=1;" value="Gmail" vertex="1">
+                    <mxGeometry height="78" width="78" x="-184.5" y="318" as="geometry"/>
+                </mxCell>
+                <mxCell id="zp_uxWkIxoyt38t0GTnI-3" parent="1" style="shape=image;verticalLabelPosition=bottom;verticalAlign=top;imageAspect=0;image=data:image/png,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAABI0lEQVR4nO3ZMWrDQBAF0K1ynBSpYogbfdCewMdxHbnyDbKTNucIZNz5EI7YHCD1BhcBYRx5iXdWGjwffiMEs0+abp2zWGSzelvdgdpNE9oe5FOp0v713dUIgu9KHvy33O/qIEp/+SGA+1162dOHKEDi8EMASyNqAFgSUQvAUoiaAJZA1AZwacQUAC6JmArApRBSgMV2me7XDxc7W0Auws0ZgAzE7AG4gFABwAhCDQB/IFQBcAahDoAThEoABgi1AJBPj9snWUD8/ipSjMwwADIAuc//854zAN3ACkXtAGhfIWgHRO0rFLUDoH2FoB0Qta9Q1ApAhToDkAGSAa5JQ/5zMkBoD26u16w5bcg/l7noDr6r+Sea46zgu+PsqwEWixvND2xbRNHjVgm8AAAAAElFTkSuQmCC;labelPerimeter=1;" value="スプレッドシート" vertex="1">
+                    <mxGeometry height="78" width="78" x="-184.5" y="162" as="geometry"/>
+                </mxCell>
+                <mxCell id="zp_uxWkIxoyt38t0GTnI-12" edge="1" parent="1" source="zp_uxWkIxoyt38t0GTnI-8" style="edgeStyle=none;html=1;endArrow=classic;endFill=1;startArrow=classic;startFill=1;" target="zp_uxWkIxoyt38t0GTnI-1" value="メールの取得・通知">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="zp_uxWkIxoyt38t0GTnI-13" edge="1" parent="1" source="zp_uxWkIxoyt38t0GTnI-8" style="edgeStyle=none;html=1;entryX=1;entryY=0.75;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" target="zp_uxWkIxoyt38t0GTnI-3" value="データの記録・確認">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="zp_uxWkIxoyt38t0GTnI-14" connectable="0" parent="zp_uxWkIxoyt38t0GTnI-13" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+                    <mxGeometry relative="1" x="0.0882" y="-2" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="zp_uxWkIxoyt38t0GTnI-8" parent="1" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#00188D;shape=mxgraph.azure.script_file;labelPerimeter=1;" value="GAS" vertex="1">
+                    <mxGeometry height="50" width="47" x="78" y="332" as="geometry"/>
+                </mxCell>
+                <mxCell id="zp_uxWkIxoyt38t0GTnI-24" edge="1" parent="1" source="zp_uxWkIxoyt38t0GTnI-23" style="edgeStyle=none;html=1;" target="zp_uxWkIxoyt38t0GTnI-8" value="定時実行">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="zp_uxWkIxoyt38t0GTnI-23" parent="1" style="fillColor=#28A8E0;verticalLabelPosition=bottom;sketch=0;html=1;strokeColor=#ffffff;verticalAlign=top;align=center;points=[[0.145,0.145,0],[0.5,0,0],[0.855,0.145,0],[1,0.5,0],[0.855,0.855,0],[0.5,1,0],[0.145,0.855,0],[0,0.5,0]];pointerEvents=1;shape=mxgraph.cisco_safe.compositeIcon;bgIcon=ellipse;resIcon=mxgraph.cisco_safe.capability.time_synchronization;labelPerimeter=1;" value="トリガー" vertex="1">
+                    <mxGeometry height="43" width="43" x="82" y="162" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

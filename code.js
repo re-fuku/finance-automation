@@ -20,7 +20,7 @@ function getGmails() {
             sheet.appendRow([place, "支出", date, amount, "未分類"])
         }
 
-        // thread.moveToArchive()
+        thread.moveToArchive()
     }
 }
 

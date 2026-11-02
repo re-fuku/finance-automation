@@ -9,13 +9,15 @@ function getGmails() {
     const threads = GmailApp.search(`in:inbox subject:${targetSubject}`)
     const sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("実績管理")
 
+    console.log("取得数: ", threads.length)
+
     for (const thread of threads) {
         for (const message of thread.getMessages()) {
             const body = message.getPlainBody()
-
-            const date = body.match(/利用日：\s*([^\r\n]+)/)[1].split(" ")[0]
-            const place = body.match(/利用先：\s*([^\r\n]+)/)[1]
-            const amount = body.match(/利用金額：\s*([^\r\n]+)/)[1].replace('円', '')
+            console.log("body: ", body)
+            const date = body.match(/利用日\s*：\s*([^\r\n]+)/)[1].split(" ")[0]
+            const place = body.match(/利用先\s*：\s*([^\r\n]+)/)[1]
+            const amount = body.match(/利用金額\s*：\s*([^\r\n]+)/)[1].replace('円', '')
             
             sheet.appendRow([place, "支出", date, amount, "未分類"])
         }

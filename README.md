@@ -43,7 +43,7 @@ Gmailに届くクレジットカードの利用通知メールから情報を取
 これにより、いつ・何に・いくら使用したかを確認できる。
 
 <p align="center">
-    <img src="images/sample.png" width="40%" style="vertical-align: top">
+    <img src="images/sample.png" width="40%">
     <img src="images/sample_calendar.png" width="40%">
 </p>
 

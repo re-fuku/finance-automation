@@ -48,7 +48,7 @@ Gmailに届くクレジットカードの利用通知メールから情報を取
 </p>
 
 ### 未分類項目の通知
-利用履歴に未分類の項目がある場合は件数をGmailにて通知する。
+利用履歴に未分類の項目がある場合は件数をGmailにてリンク付きで通知する。
 
 <p align="center">
     <img src="images/notification.png" width="50%">
